@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+.nav1 h2{
+    background-color:black;
+    color: white;
+    font-size:50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+} 
+
+.nav1 a{
+    color:black;
+    font-size: 22px;
+    letter-spacing:2px;
+    margin:2px 10px;
+    box-shadow: 0px 1px 1px  grey;
+}
+.nav1 a:hover{
+    color:rgb(62, 202, 62);
+    text-shadow: 5px;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color:#fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    max-width: 820px;
+    height:500px;
+    background-color:rgb(245, 243, 243);
+    border-radius:10px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.1);
+    z-index:1000 ;
+    overflow:hidden;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr)
+}
+.contact .info{
+    background-color: rgb(62, 202, 62);
+}
+.contact-form{
+    background-color:rgb(62,202,62);
+    position:relative;
+}
+.circle{
+    
+    border-radius: 50%;
+    background:linear-gradient(135deg,transparent 20%,#fafafa);
+    position:absolute;
+}
+circle .one{
+    width: 130px;
+    height:130px;
+    top: 130px;
+    right: -40px;
+}
+circle .two{
+    width: 80px;
+    height:80px;
+    top: 10px;
+    right: 30px;
+}
+.contact-form:before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color:rgb(62, 202, 62);
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+}
+form{
+    padding: 2.3rem 2.2 rem;
+    z-index:10;
+  overflow: hidden;
+    position:relative;
+}
+.title{
+    color:black;
+    font-weight: 500;
+    font-size: 1.5rem  ;
+    line-height: 1;
+    margin-left:5px;
+    margin-bottom: 0.7rem;
+}
+
+.input-container{
+    position: relative;
+    margin: 1.5rem 1rem;
+}
+
+
+.input{
+    width: 80%;
+    outline: none;
+    border: 2px solid#fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color:white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius:25px;
+    letter-spacing: 0.5px;
+    transition: 0.3sec;
+}
+textarea .input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y:auto;
+}
+
+.btn{
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid#fafafa;
+    font-size: 0.95rem;
+    color: rgb(62, 202, 62);
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.btn:hover{
+    background-color: transparent;
+    color:#fff;
+}
+.contact-info{
+    padding:2.5rem 2.5rem;
+}
+.contact-info .title{
+    color:rgb(62, 202, 62);
+}
+.info .information {
+         margin-block-end: 10px;
+         display: inline;
+}
+.contact-info p{
+    margin-bottom: 20px;
+    color:rgb(62, 202, 62);
+}
+
+.info .social-media img {
+      margin-top:20px;
+      margin-bottom:5px ;
+}
+
+footer {
+    background-color: rgb(62, 202, 62);
+    color: black;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1.5rem;
+    text-align: center;
+}
+footer div {
+    flex-basis: 33%;
+}
+
+
+footer p{
+    font-size: 1rem;
+    text-align: center;
+  }
+ 
+   </style>
+   <body>
+    <header>
+      <nav class="nav1">
+          <div class="left">
+              <h2><b>Contact Us</b></h2>
+              </div>
+          <div class="centre">
+              <table style="width:80%;margin:auto">
+                  <tr>
+                      <th class="menu">
+                          <a target="menu"a href="../index.html" style="text-decoration:none"><b>Home</b></a>
+  
+                          <a target="menu"a href="blog.html" style="text-decoration:none"><b>Blog</b></a>
+  
+                          <a target="menu" href="product.html" style="text-decoration:none"><b>Products</b></a>
+  
+                          <a target="menu" href="research.html" style="text-decoration:none"><b>Research</b></a>
+  
+                          <a target="menu" a href="about_us.html" style="text-decoration:none"><b>About Us</b></a>
+                      </th>
+                  </tr>
+                  
+              </table>
+      </div>
+  </nav>
+   </header>
+   <nav class="nav2">
+    <div class="container">
+     <div class="form">
+         <div class="contact-info">
+             <h2 class="title"><b>Let's Get In Touch</b></h2>
+             <p class="text">
+                 <b>lorem ipsum,dolor sit amet consectetur adipisicing elit.incidunt!</b>
+             </p>
+           <div class="info">
+                 <div clas="information">
+                     <img src="../img/location.png" height="20px" weight="20px" class="icon">
+                     <p> <b>Kathmandu,bagmati kamal-marga</b></p>
+                 </div>
+                 <div clas="information">
+                     <img src="../img/contact.jpg"  height="20px" weight="20px" class="icon">
+                     <p> <b>9844787324</b></p>
+                 </div>
+                 <div clas="information">
+                     <img src="../img/email.png"  height="20px" weight="20px" class="icon">
+                     <p><b>Indoorbonsai@gmail.com</b></p>
+                 </div>
+              <div class="social-media">
+                 <img src="../img/fb.png"  width="30px" height="25px">
+                 <img src="../img/twit.png" width="30px" height="25px">
+                 <img src="../img/insta.png" width="30px" height="25px">
+                 <p><b>Connect With Us</b></p>
+              </div>
+            </div>
+         </div>
+  
+         <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+          <div class="contact_container">
+            <form id="form">
+              <h1 class="title">Contact Us</h1>
+              <div class="input-container">
+                <input type="text" id="name" name="name"class="input" required><br>
+                <label for="name">Username</label>
+                <span id="nameError" class="error"></span>
+                </div>
+                <div class="input-container">
+                <input type="email" id="email" name="email"class="input" required><br>
+                <label for="email">Email</label>
+                <span id="emailError" class="error"></span>
+                </div>
+                <div class="input-container">
+                <input type="text" id="phone" name="phone"class="input" required><br>
+                <label for="phone">Phone</label>
+                <span id="phoneError" class="error"></span>
+                </div>
+                <div class="input-container">
+                <textarea id="feedback" name="feedback"class="input" required></textarea><br>
+                <label for="feedback">Message</label>
+                <span id="feedbackError" class="error"></span>
+                </div>
+                <input type="submit" value="Send" class="btn">
+              </form>
+        </div>
+      </div>
+    </nav>
+
+    <footer>
+            
+      <div class="right">
+          <p>
+              @2023 copyright All Rights Reserved
+          </p>
+      </div>
+    </footer>
+
+  
+
+  <script src="../script/script.js"></script>
+</body>
+</html>

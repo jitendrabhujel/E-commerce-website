@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home interface</title>
+       <style>
+   .left h2{
+    background-color:black;
+    color: white;
+    font-size:50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+} 
+.nav1  a:hover{
+    color:rgb(62, 202, 62);
+    text-shadow: 5px;
+}
+
+
+.nav1  a{
+    color:black;
+    font-size: 22px;
+    letter-spacing:2px;
+    margin:2px 8px;
+    box-shadow: 0px 2px 2px  grey;
+} 
+
+.card-container{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.card-container .card{
+   flex-basis: 30%; 
+   padding: 0.8 rem; 
+   white-space: 5px;
+   position: relative;
+}
+.card img{
+    width:90%;
+    border-spacing: 10px;
+ 
+}
+
+.card button{
+    color: white;
+    background-color: black;
+      border:none;
+      outline: none;
+      margin-top: 20px;
+      padding:10px 20px;
+}
+
+.card::before{
+    content:'20%off';
+    width:20%;
+    height:20px;
+    line-height:20px;
+    color:white;
+    position:absolute;
+    top:0; 
+    left:0;
+    background-color: black;
+    padding:0px 4px;
+    transform:rotate(-20deg);
+}
+ .latest{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.intro h1 {
+    color:black;
+    font-size: 50px;
+}
+.intro h1 span{
+    color:rgb(62, 202, 62);
+}
+
+
+footer {
+    background-color: rgb(62, 202, 62);
+    color: black;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1.5rem;
+    text-align: center;
+    margin-top:20px;
+}
+footer div {
+    flex-basis: 33%;
+}
+footer h1{
+    letter-spacing:0.5px;
+}
+footer i{
+    margin:0px 5px;
+
+}
+footer p{
+    font-size: 1rem;
+}
+ footer .right i{
+    text-align: center;
+ }
+
+       </style>
+    </head>
+    <body>
+        <div class="left">
+            <h2><b>Products</b></h2>
+            </div>
+        <nav class="nav1">
+            <div class="centre">
+                <table style="width:80%;margin:auto">
+                    <tr>
+                        <th class="menu">
+                            
+                            <a target="menu" a href="../index.html" style="text-decoration:none"><b>Home</b></a>
+                            <a target="menu" a href="blog.html" style="text-decoration:none"><b>Blog</b></a>
+    
+                            <a target="menu" a href="research.html" style="text-decoration:none"><b>Research</b></a>
+    
+                            <a target="menu" a href="about_us.html" style="text-decoration:none"><b>About Us</b></a>
+                            <a target="menu" a href="contact us.html" style="text-decoration:none"><b>Contact Us</b></a>
+                        </th>
+                    </tr>
+                </table>
+               
+              
+            </nav>
+        <!--header-->
+
+        <section class="latest">
+            <div class="intro">
+                <h1><b>Our<span>Products</b></span></h1>
+                <p>lorem ipsum,dolor sit amet consectetur adipisicing elit.incidunt!</p>
+            </div>
+            <div class="card-container">
+            <div class="card">
+                <div>
+                    <img src="../img/24.webp">
+                </div>
+                <h1>Juniper</h1>
+                <p> Rs:$100</p>
+                <p>Discounted price:$80</p>
+                <p>
+                    <button onclick="popUp()">Add to cart</button>
+                    <button onclick="popUp()">Remove from cart</bottom>
+                    </p>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="../img/32.webp" >
+                </div>
+                <h1>Japanese maple</h1>
+                <p> Rs:$100</p>
+                <p>Discounted price:$80</p>
+                <p>
+                    <button onclick="popUp()">Add to cart</button>
+                    <button onclick="popUp()">Remove from cart</bottom>
+                    </p>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="../img/27.webp" >
+                </div>
+                <h1>GINSENG</h1>
+                <p> Rs:$100</p>
+                <p>Discounted price:$80</p>
+                <p>
+                    <button onclick="popUp()">Add to cart</button>
+                    <button onclick="popUp()">Remove from cart</bottom>
+                    </p>
+            </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div>
+                        <img src="../img/28.webp" >
+                    </div>
+                    <h1>CRASSULA</h1> 
+                    <p> Rs:$100</p>
+                    <p>Discounted price:$80</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../img/31.webp">
+                    </div>
+                    <h1>FICUS RETUSA</h1>
+                    <p> Rs:$100</p>
+                    <p>Discounted price:$80</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../img/30.webp">
+                    </div>
+                    <h1>Azalea</h1>
+                    <p> Rs:$100</p>
+                    <p>Discounted price:$80</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                
+            </div>
+           </section>
+        
+             <!---->
+              <section class="latest">
+                 
+                <div class="card-container">
+                <div class="card">
+                    <div>
+                        <img src="../img/8.jpg">
+                    </div>
+                    <h1>BOUGAINVILLEA</h1>
+                    <p> Rs:$70</p>
+                    <p>Discounted price:$50</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../img/32.webp">
+                    </div>
+                    <h1>Chinese elm</h1>
+                    <p> Rs:$70</p>
+                    <p>Discounted price:$50</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../img/33.webp">
+                    </div>
+                    <h1>Oak</h1>
+                    <p> Rs:$70</p>
+                    <p>Discounted price:$50</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                </div>
+              </section>
+
+              <section class="latest">
+                 
+                <div class="card-container">
+                <div class="card">
+                    <div>
+                        <img src="../img/aa.jpg">
+                    </div>
+                    <h1>Japanese elm</h1>
+                    <p> Rs:$70</p>
+                    <p>Discounted price:$50</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../img/ab.jpeg">
+                    </div>
+                    <h1>Pines</h1>
+                    <p> Rs:$70</p>
+                    <p>Discounted price:$50</p>
+                    <p>
+                        <button onclick="popUp()">Add to cart</button>
+                        <button onclick="popUp()">Remove from cart</bottom>
+                        </p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="../img/ac.jpg">
+                    </div>
+                    <h1>Juniper</h1>
+                    <p> Rs:$70</p>
+                    <p>Discounted price:$50</p>
+                    <p>
+                    <button onclick="popUp()">Add to cart</button>
+                    <button onclick="popUp()">Remove from cart</bottom>
+                    </p>
+                </div>
+                </div>
+              </section>
+
+              <script>
+                function popUp() {
+                    alert("Added to cart!"); 
+                }
+            </script>
+            <script>
+              function popUp_1() {
+                  alert("Removed from cart!");
+              }
+          </script>
+
+       
+    <footer>
+        <div class="left"> 
+            <h1>My <span> Store</span></h1>
+            <p> Indoor Bonsai</p>
+        </div>
+        <div class="center">
+          <table>
+            <p>Contact us:</p>
+            <img src="../img/fb.png" height="30px" width="35px">
+            <img src="../img/insta.png" height="30px" width="35px">
+            <img src="../img/twit.png" height="30px" width="35px">
+              <p> Designed by Team-5</p>
+          </table>
+        </div> 
+        <div class="right">
+            <p>
+                @2023 copyright All Rights Reserved
+            </p>
+        </div>
+      </footer>
+      </body>
+</html>

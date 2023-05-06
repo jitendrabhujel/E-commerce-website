@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>e-commerce</title>
+    <meta name="author" content="jitendra_bhujel" />
+    <meta name="description" content="Html document" />
+    <meta name="keyword" content="Html"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <style type="text/css">
+        .slider{
+            width:70%;
+            height: 500px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            overflow: hidden;
+            animation: alternate;
+            box-shadow: 5px 5px 10px grey;
+        }
+    </style> 
+</head>
+<body>
+    
+    <header>
+        <nav class="nav1">
+            <div class="centre">
+                <h1>Bonsai E-Commerce</h1> 
+               
+                </div>
+                <div class="right">
+                   <p><b><span>Kathmandu,Bagmati</span></b></p>
+                </div>
+            <div class="left">
+                <img src="img/4.jpg" width="150px" height="100px">
+                <p> <b>Indoor Bonsai</b></p>
+                </div>
+                <div class="container">
+                    <form action="" class="search-bar">
+                     <input type="text" placeholder="search anything" name="#" >
+                     <button type=" submit"><img src="img/search.jpg" height="10px" width="10px">
+                    </form>
+                </div>
+           
+        </nav>
+        </header>
+    <!--nav1 end-->
+    
+
+    <!--nav2 start-->
+    <nav class="nav2">
+        <div class="centre">
+            <table style="width:80%;margin:auto">
+                <tr>
+                    <th class="menu">
+                        
+
+                       <a target="menu" a href="./pages/blog.html" style="text-decoration:none"><b>Blog</b></a>
+
+                        <a target="menu"  a href="./pages/product.html" style="text-decoration:none"><b>Products</b></a>
+
+                        <a target="menu" a href="./pages/research.html" style="text-decoration:none"><b>Research</b></a>
+
+                        <a target="menu" a href="./pages/about_us.html" style="text-decoration:none"><b>About Us</b></a>
+                        <a target="menu" a href="./pages/contact us.html" style="text-decoration:none"><b>Contact Us</b></a>
+                    </th>
+                </tr>
+            </table>
+           
+          
+        </nav>
+    <!--nav2 end-->
+    <div class="slider">
+        <div id="img">
+            <img src="img/2a.jpg" height="100%" width="100%">
+        </div>
+     </div>
+     <script>
+         var images=['img/2a.jpg','img/6.jpg','img/23.jpg','img/24.webp','img/25.webp','img/17.jpg','img/3a.jpg','img/21.jpg','img/22.jpg'];
+         var x=0;
+         var imgs=document.getElementById('img');
+         setInterval(slider,1000);
+         function slider(){
+            if(x < images.length)
+            {
+                x=x+1;
+            }
+            else{
+                x=1;
+            }
+            imgs.innerHTML="<img src=" + images[x-1] +">";
+         }
+     </script>
+     </div>
+     </nav>
+<!--nav2 end-->
+<div class="topic">
+    <h1><span>Bonsai</span> Tree</h1>
+ </div>
+ <div class="main_head">
+ <div class="description">
+     <div class="p1" >
+     
+         <p> Bonsai is an ancient living art form that utilizes growing and training techniques 
+             to produce miniature trees that mimic the appearance of their full-sized counterparts. 
+             These techniques include heavy crown pruning, root pruning, and root confinement in shallow
+              containers. Nearly any perennial, woody-stemmed tree or shrub that produces true branches
+               can be trained as a bonsai tree. However, some species are more well-suited to growing 
+               as bonsai than others. Some bonsai tree species are more popular due to aesthetic reasons
+              while others are popular because they are notorious for being low-maintenance and resilient when grown as miniatures.</p>
+     </div>
+     <div class="i1"> <img class="header_img" src="img/header_photo.jpg" ></div>
+     </div>
+
+   <section class="latest">
+    <div class="intro">
+        <h1><b>New <span>Products</b></span></h1>
+        <p>lorem ipsum,dolor sit amet consectetur adipisicing elit.incidunt!</p>
+    </div>
+    <div class="card-container">
+    <div class="card">
+        <div>
+            <img src="img/11.webp" alt="">
+        </div>
+        <h1>Ficus</h1>
+        <p> Rs:$100</p>
+        <p>Discounted price:$80</p>
+        
+    </div>
+    <div class="card">
+        <div>
+            <img src="img/5.png" alt="">
+        </div>
+        <h1>Dwarf jade</h1>
+        <p> Rs:$100</p>
+        <p>Discounted price:$80</p>
+    </div>
+    <div class="card">
+        <div>
+            <img src="img/8.jpg" alt="">
+        </div>
+        <h1>Fukien tea</h1>
+        <p> Rs:$100</p>
+        <p>Discounted price:$80</p>
+    </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div>
+                <img src="img/11.webp" alt="">
+            </div>
+            <h1>Azalea</h1> 
+            <p> Rs:$100</p>
+            <p>Discounted price:$80</p>
+        </div>
+        <div class="card">
+            <div>
+                <img src="img/5.png" alt="">
+            </div>
+            <h1>Boungainvillea</h1>
+            <p> Rs:$100</p>
+            <p>Discounted price:$80</p>
+        </div>
+        <div class="card">
+            <div>
+                <img src="img/8.jpg" alt="">
+            </div>
+            <h1>Serissa</h1>
+            <p> Rs:$100</p>
+            <p>Discounted price:$80</p>
+        </div>
+        
+    </div>
+   </section>
+
+     <!---->
+      <section class="latest">
+        <div class="intro">
+            <h1><b>Top<span>Products</b></span></h1>
+            <p>lorem ipsum,dolor sit amet consectetur adipisicing elit.incidunt!</p>
+        </div>
+        <div class="card-container">
+        <div class="card">
+            <div>
+                <img src="img/12.jpg" alt="">
+            </div>
+            <h1>Japanese maple</h1>
+            <p> Rs:$70</p>
+            <p>Discounted price:$50</p>
+        </div>
+        <div class="card">
+            <div>
+                <img src="img/13.jpg" alt="">
+            </div>
+            <h1>Chinese elm</h1>
+            <p> Rs:$70</p>
+            <p>Discounted price:$50</p>
+        </div>
+        <div class="card">
+            <div>
+                <img src="img/6.jpg" alt="">
+            </div>
+            <h1>Cherry</h1>
+            <p> Rs:$70</p>
+            <p>Discounted price:$50</p>
+        </div>
+        </div>
+      </section>
+
+      <div class="right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2233383396892!2d85.32311398040636!3d27.710389793139083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19088cf744ff%3A0x5d442b976acd7fcc!2sKumari%20Hall%20-%20Islington%20College!5e0!3m2!1sen!2snp!4v1674464566868!5m2!1sen!2snp width="200 height="200 style="border:0; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+      
+<!---->
+      <footer>
+        <div class="left"> 
+            <h1>My <span> Store</span></h1>
+            <p> Indoor Bonsai</p>
+        </div>
+        <div class="center">
+          <table>
+            <p>Contact us:</p>
+            <img src="img/fb.png" height="30px" width="35px">
+            <img src="img/insta.png" height="30px" width="35px">
+            <img src="img/twit.png" height="30px" width="35px">
+              <p> Designed by Team-5</p>
+          </table>
+        </div> 
+        <div class="right">
+            <p>
+                @2023 copyright All Rights Reserved
+            </p>
+        </div>
+      </footer>
+    
+      
+</body>
+
+</html>
